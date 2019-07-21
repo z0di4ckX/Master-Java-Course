@@ -20,6 +20,20 @@ public class FormStament {
         for(int i = 8; i > 2; i--) {
             System.out.println("10,000 at " + i + "% interest = " + String.format("%.2f", calculateInterest(10000.0, i)));
         }
+
+        System.out.println("====================");
+
+        int count = 0;
+        for(int i = 10; i < 50; i++) {
+            if(isPrime(i)) {
+                count++;
+                System.out.println("Number " + i + " is a prime number");
+                if(count == 3) {
+                    System.out.println("Exiting for loop");
+                    break;
+                }
+            }
+        }
     }
 
     public static boolean isPrime(int n) {
