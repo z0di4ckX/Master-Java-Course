@@ -7,7 +7,7 @@ public class LastDigitChecker {
     }
 
     public static boolean isValid(int a) {
-        if(a >= 10 && a <= 10) {
+        if(a >= 10 && a <= 1000) {
             return true;
         }
 
